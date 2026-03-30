@@ -1,0 +1,39 @@
+
+
+.container{
+    /* border: 2px solid gray; */
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(70, 90, 201);
+    color: white;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(226, 247, 40);
+}
+
+.Login-links a{
+text-decoration: none;
+color: white;
+padding: 0.5rem;
+border: 2px solid slategrey;
+background-color: green;
+}
