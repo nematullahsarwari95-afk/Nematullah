@@ -130,9 +130,14 @@ transition: 0.5s;
 }
 
 .feature-grid{
-    display: grid;
-    grid-template-columns:repeat(3, 1fr) ;
-    gap: 2rem;
+    /* display: grid;
+    grid-template-columns:repeat(3, 1fr) ;*/
+    gap: 2rem; 
+width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
 
 }
 
@@ -141,8 +146,9 @@ transition: 0.5s;
 }
 
 .feature-card{
+    flex:1 1 250px;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0,0.1);
     transition: 0.3 ease;
