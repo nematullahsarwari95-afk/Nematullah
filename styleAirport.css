@@ -13,6 +13,24 @@ body{
 
     
 }
+
+/* medie Qu */
+@media (max-width: 368px) {
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+
+  }
+}
+/* medie Qu */
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -27,8 +45,10 @@ nav ul{
     display: flex;
     list-style: none;
     /* margin: 0;
-    padding: 0; */
+    padding: 0;*/
 }
+
+
 
 nav ul li a{
     display: inline-block;
@@ -87,6 +107,7 @@ transition: 0.5s;
     justify-content: start;
 
 
+
 }   
 
 
@@ -102,9 +123,34 @@ transition: 0.5s;
     justify-content: center;
     flex-direction: column;
      /* background-image: url(./Airp.jpg);  */
-    color: rgb(4, 60, 105);
+    color: rgb(0, 0, 0);
+    font-size: large;
+ 
 
 }
+.slider-wrapper{
+
+         display: flex;
+        justify-content: center; 
+
+}
+
+/* .slider-hero{
+    border: 2px solid darkmagenta;
+}
+.slider-body{
+        border: 2px solid rgb(11, 136, 219);
+         
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+}
+.slider-content-body{
+    
+    justify-content: center;
+    border: 2px solid greenyellow;
+} 
+    */
 
 
 
@@ -112,8 +158,6 @@ transition: 0.5s;
     border: 3px solid black;
 
 }
-
-
 
 
 
@@ -224,14 +268,14 @@ transition: 0.5s;
         display: flex;
         justify-content: center;
         margin-bottom: 1px;
-          border: 2px solid blue;
+          /* border: 2px solid blue; */
       }
-/*        
-      .foot-contact{
+        
+    /* .foot-contact{
        display: flex;
         justify-content: center;
         border: 2px solid blue;
-      } */
+      }  */
 
 
 .footer-container{
