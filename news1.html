@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>News Layout</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(33, 44, 80);
+    color: white;
+    padding: 10px 20px;
+}
+
+/* NAVBAR */
+ .nav {
+   
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+} 
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* LEFT - NEWS LIST */
+.cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 8px;
+}
+
+.card-content h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.card-content p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #555;
+}
+
+/* RIGHT - HERO */
+.hero-part {
+    flex: 2;
+}
+
+.hero {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 15px;
+}
+
+.hero-content h2 {
+    margin: 0;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Footer section  */
+.footer{
+    text-align: center;
+             background-color: rgb(26, 50, 61);
+             padding: 0px 25px;
+}
+
+      .foot-testimounial{
+
+        /* border: 2px solid blueviolet; */
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1px;
+          /* border: 2px solid blue; */
+      }
+        
+    /* .foot-contact{
+       display: flex;
+        justify-content: center;
+        border: 2px solid blue;
+      }  */
+
+
+.footer-container{
+
+
+    background-color: rgb(26, 50, 61);
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-links a i{
+    color: rgb(11, 136, 219);
+    margin: 3px;
+
+}
+.foot-contact{
+    color: white;
+}
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer-contents div{
+    flex: 1 1 270px;
+    max-width: 320px;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <h2>AirPort</h2>
+    <img src="logo.png" width="50">
+</header>
+
+<!-- NAV -->
+ <div class="nav">
+   <h2>خبرونه</h2>
+</div> 
+
+<!-- MAIN -->
+<div class="container">
+
+    <!-- LEFT -->
+    <div class="cards">
+
+        <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>هلمند پروژه</h4>
+                <p>هلمند ولایت کې د تیرپارک جوړولو چارې ۲۵ سلنه پر مخ تللې دي</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>د هوا خبرداری</h4>
+                 <p>د ټرانسپورټ او هوایي چلند وزارت د هوا پېژندنې ریاست خبرداری: د باران او بادونو د پېښېدو اټڪل!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>انلاین ناسته</h4>
+                 <p>د واټ ټرانسپورټ ولایتي مسئولینو سره د چارو لا شفافیت په اړه انلاین ناسته وشوه</p>
+            </div>
+        </div>
+
+                <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>انلاین ناسته</h4>
+                 <p>د واټ ټرانسپورټ ولایتي مسئولینو سره د چارو لا شفافیت په اړه انلاین ناسته وشوه</p>
+            </div>
+        </div>
+                <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>انلاین ناسته</h4>
+                 <p>د واټ ټرانسپورټ ولایتي مسئولینو سره د چارو لا شفافیت په اړه انلاین ناسته وشوه</p>
+            </div>
+        </div>
+                <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>انلاین ناسته</h4>
+                 <p>د واټ ټرانسپورټ ولایتي مسئولینو سره د چارو لا شفافیت په اړه انلاین ناسته وشوه</p>
+            </div>
+        </div>
+                <div class="card">
+            <img src="Fg.jpg">
+            <div class="card-content">
+                <h4>انلاین ناسته</h4>
+                 <p>د واټ ټرانسپورټ ولایتي مسئولینو سره د چارو لا شفافیت په اړه انلاین ناسته وشوه</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-part">
+
+        <div class="hero">
+            <img src="1.jpg">
+            <div class="hero-content">
+                <h2 >د ټرانسپورټ وزارت </h2>
+                 <p>د افغانستان په لرغوني تاریخ کې کله چې سړکونه او موټر نه وو، د مالونو لېږد رالېږد د حیواناتو په مرسته ترسره کېده. ویل کېږي چې د ۱۱۵۲ لمریز کال په شاوخوا کې د تیمورشاه د واکمنۍ پر مهال، د قافلو د تنظیم لپاره یو کس چې "قافله باشي" يې باله، ټاکل شوی و. دا په افغانستان کې د ځمکنيو ټرانسپورټي چارو د تنظیم لومړنۍ هڅه وه. د ۱۲۸۳ لمریز کال په اوږدو کې د امیر حبیب‌الله خان د واکمنۍ پر مهال د هند د نایب‌السلطنه له خوا د ډالۍ په توګه لومړنی موټر د غوايانو په مرسته افغانستان ته راوړل شو. دا لومړنی موټر و، چې د هېواد د ټرانسپورټي نظام د پرمختګ بنسټ یې کېښود. ، د عبدالحی حبيبي (د افغانستان تاريخي پېښليک کتاب) لومړي ټوک له قوله په ۱۲۹۲ لمریز کال د لیندۍ په میاشت کې "شرکت موټرکار افغانيه" په نوم لومړنی ټرانسپورټي شرکت جوړ شو،
+                 چې د موټرو د پراختیا لپاره یې لاره هواره کړه.</p>
+            </div>
+        </div>
+
+        <div class="hero">
+            <img src="2.jpg">
+            <div class="hero-content">
+                <h2>موټر</h2>
+               <p>له انګلستان څخه د خپلواکۍ له اخيستلو وروسته چې د افغانستان په بېلابېلو برخو کې پرمختګونه پيل شول، د ځمکني ټرانسپورټ او هوایي چلند لپاره هم يو مهم پيل و او په ۱۳۰۴ل کال امان‌الله خان په خپل لګښت د «موتور رانی» په نوم يو ټرانسپورټي شرکت رامنځته او له دې سره يې سړک جوړولو ته هم پاملرنه زياته کړه. په (۱۹۵۰ ـ ۱۹۶۰) زېږديزو کالونو پورې د هيواد لوېې لارې جوړې او پخې کړای شوې چې آن تر تورغونډۍ او اسلام کلا پورې وغځول شوې، چې د ټرانسپورټي نظام د لا پیاوړتیا سبب وګرځېدې.
+
+په ۱۳۱۱ لمریز کال د مخابراتو ریاست په چوکاټ کې د عمومي ټرانسپورټ مدیریت جوړ شو. وروسته دا مدیریت د مخابراتو له چوکاټ څخه بېل او د صدارت عظمی تر چتر لاندې یې فعالیت پیل کړ، چې د ترافیکو څانګه هم د دې مدیریت برخه وه. په ۱۳۳۵ لمریز کال دا مدیریت د ټرانسپورټ ریاست ته ارتقا وکړه او د سوداګرۍ وزارت په چوکاټ کې یې کار پیل کړ. په ۱۳۵۸ لمریز کال کې دا ریاست د ټرانسپورټ وزارت ته واوښت او د یوه خپلواک وزارت په
+ توګه یې خپل فعالیت پيل کړ.</p>
+            </div>
+        </div>
+
+                <div class="hero">
+            <img src="3.jpg">
+            <div class="hero-content">
+           <h3>د هوايي چلند پیل</h3>
+            <p>د افغانستان د هوايي چلند بنسټ په ۱۳۰۲ لمریز کال کې کېښودل شو او په ۱۳۰۶ لمریز کال د لیندۍ په میاشت کې د کابل او تاشکند ترمنځ لومړنۍ هوايي کرښه د ډیپلوماتیکو اړیکو د پیاوړتیا لپاره پرانېستل شوه او تر دې وروسته هم د روس او جرمني کوچنۍ الوتکې د ملخانو د دواپاشۍ او ځينې نورو ډيپلوماټيکو مسائلو لپاره افغانستان ته راتلې، د همدې الوتکو د کنټرول او د هوايي چلند اړتياوو ته په پام په ۱۳۳۱ لمریز کال کې د ملکي هوايي چلند عمومي مدیریت رامنځته او د الوتنو د کنټرول، د ملکي هوايي ډګرونو د سمون مسوولیت یې پر غاړه واخیست. د دې مدیریت لومړنی مشر ګلبهار خان و، نوموړی د هوايي ځواک له قوماندانۍ يو تقاعد شوی پيلوټ و او په دې برخه کې يې پوره تجربه درلوده، د هوايي چلند مدیریت 
+                د لومړني عمومي مدير په توګه وټاکل شو.</p>
+            </div>
+        </div>
+
+
+                <div class="hero">
+            <img src="4.jpg">
+            <div class="hero-content">
+             <h3>باختر افغان الوتنه</h3>
+            <p>د ایکاو او د ملګرو ملتونو پراختیایي ادارې (UNDP)په مرسته په ۱۳۴۷ل کال کې یو بل هوایي شرکت د "باختر افغان الوتنه" په نوم د کورنیو الوتنو لپاره تاسیس شو. د دې شرکت موخه د لرې پرتو او سختو سیمو د خلکو ستونزو ته لاسرسی او د ګرځندويانو جلبول وو. درې کاناډایي (Twin Otter)الوتکې، چې ۱۸ چوکۍ يې درلودې، په خامه او ۳۰۰ متره ځغاستليکو باندې يې ناسته او الوتنه کولای شوه، وپېرل شوې.
+
+د ۱۳۵۷ لمریز کال د غويي د اوومې نېټې له کودتا وروسته، د هوايي چلند په چارو کې د پام وړ بدلونونه رامنځته شول. نورمحمد دلیلي د ملکي هوايي چلند رئیس وټاکل شو او په ۱۳۵۸ لمریز کال د هوايي چلند ریاست د ټرانسپورټ وزارت تر چتر لاندې راغی. ښاغلی بارق شفیعي د ټرانسپورټ او هوايي چلند وزیر وټاکل شو او وروسته تر ۱۳۶۴ لمریز کال پورې شیرجان مزدوریار او عبدالرحیم کاروال
+ د ټرانسپورټ وزیرانو په توګه دندې ترسره کړې.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-contents">
+               <div class="foot-contact">
+                 
+                    <h3>اړیکه</h3>
+                    <p>نمبر :۷۷۳۰۳۲۶۰۴</p>
+                    <p>ایمل آدرس:nematullahsarwari95.com</p>
+                     <p>پته: کابل افغانستان</p>
+                    
+                </div>
+                
+                <div class="social-links">
+                   <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                   <a href=""><i class="fa-brands fa-youtube"></i></a>
+                   <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+            <div class="foot-testimounial ">
+                <h3>کابل نړیوال هوایی ډکر</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+             
+            </div>
+            
+          
+        </div>
+       
+        <div class="footer-container">
+
+            <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
+           
+        </div>
+    </footer>
+
+</body>
+</html>

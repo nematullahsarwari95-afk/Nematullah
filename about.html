@@ -15,6 +15,15 @@
     
     }
 
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 44, 80);
+    color: white;
+    padding: 10px 20px;
+}
+
 
 
     /* .feature-grid{
@@ -52,14 +61,63 @@
     
     }
 
+
+
+/* Footer section  */
+
+      .foot-testimounial{
+         background-color: rgb(26, 50, 61);
+        /* border: 2px solid blueviolet; */
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1px;
+          /* border: 2px solid blue; */
+      }
+        
+    /* .foot-contact{
+       display: flex;
+        justify-content: center;
+        border: 2px solid blue;
+      }  */
+
+
+.footer-container{
+
+
+    background-color: rgb(26, 50, 61);
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-links a i{
+    color: rgb(11, 136, 219);
+    margin: 3px;
+
+}
+
+
     </style>
 </head>
 <body>
+
+    <header class="header">
+    <h3>AirPort</h3>
+    <img src="logo.png" width="50">
+    </header>
+
       
         <header class="container-fluid">
         <nav>
             <div class="nav-item">
-             <h2>خبرونه</h2>
+             <h2>په اړه</h2>
             </div>
         </nav>
     </header>
@@ -67,7 +125,7 @@
 
         <section>
         <div class="container">
-            <h2>خبرونه</h2>
+            <h2>تاریخچه</h2>
             <div class="feature-grid">
                 <div class="feature-card">
 
@@ -112,6 +170,33 @@
                 </div>
                 </div>
                 </section>
+
+<!-- footer -->
+
+          <footer class="footer">
+        <div class="foot-testimounial ">
+            <h3>کابل نړیوال هوایی ډکر</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            <div class="foot-contact">
+             
+                <h3>اړیکه</h3>
+                <p>+93773032604 :نمبر</p>
+                <p>nematullahsarwari95.com :ایمل آدرس</p>
+                 <p>پته: کابل افغانستان</p>
+                
+            </div>
+           </div>
+        <div class="footer-container">
+
+            <p>2026 AirPort Management.&copy; .ټول حقوق خوندي دي</p>
+            <div class="social-links">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
     
 </body>
-</html>
+</html> 

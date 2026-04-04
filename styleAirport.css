@@ -7,13 +7,20 @@ body{
 .container-fluid{
     width: 100%;
     /* padding: 1rem; */
-    background-color: rgb(3, 3, 134);
+    background-color: rgb(33, 44, 80);
     color: white;
 
 
     
 }
 
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
 /* media queries */
 @media (max-width: 768px) {
   nav ul {
@@ -69,27 +76,10 @@ border-radius: 6px;
 transition: 0.5s;
 
 }
+
 .Login-links a:hover{
     background-color:rgb(161, 107, 5) ;
 }
-
-
-/* #img{
-    width:100%;
-    height: auto;
-   box-shadow: 0 0 3px;
-} */
-
-
-
-/* image */
-/* .slider-header { 
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}  */
 
 
 
@@ -134,22 +124,16 @@ transition: 0.5s;
 
 }
 
-/* .slider-hero{
-    border: 2px solid darkmagenta;
+.slider-footer a{
+text-decoration: none;
+color: white;
+background-color: rgb(11, 136, 219);
+padding: 0.5rem;
+border-radius: 6px;
+transition: 0.5s;
+
 }
-.slider-body{
-        border: 2px solid rgb(11, 136, 219);
-         
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-}
-.slider-content-body{
-    
-    justify-content: center;
-    border: 2px solid greenyellow;
-} 
-    */
+
 
 
 
@@ -217,34 +201,59 @@ transition: 0.5s;
 
 /* Demo Section */
 
+
 .demo{
-    padding: 2rem;
+    padding: 12rem;
     text-align: center;
-    background-color: rgb(33, 44, 80);
-    color: white;
+    color: black;
+
 }
-.demo-images{
+
+
+.container {
+    width: 90%;
+    margin: auto;
+  
+}
+
+ .demo .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 10px;
+    gap: 20px;
+      
+ }
+ 
+.demo-images{
+    flex: 1 1 280px;
+    max-width: 300px;
+     background-color: rgb(33, 44, 80);
+     background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+
 }
 
 .demo-images img{
     width:100%;
-     height: auto;
+     height: 180px;
     max-width: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 10px ghostwhite;
+    object-fit: cover;
 }
+
+
+
 /* Demo Section */
 
 
 
 /* FAQ section */
 
-      .faq{background-color: #f8f9fa;
+      .faq{
+        background-color: #f8f9fa;
         padding: 2rem 1rem;
 
       }
@@ -267,27 +276,26 @@ transition: 0.5s;
 
 
 /* Footer section  */
+.footer{
+    text-align: center;
+             background-color: rgb(26, 50, 61);
+             padding: 0px 25px;
+}
 
-      .foot-testimounial{
-         background-color: rgb(26, 50, 61);
+ .foot-testimounial{
+
         /* border: 2px solid blueviolet; */
         color: white;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         margin-bottom: 1px;
           /* border: 2px solid blue; */
       }
         
-    /* .foot-contact{
-       display: flex;
-        justify-content: center;
-        border: 2px solid blue;
-      }  */
 
 
 .footer-container{
-
-
     background-color: rgb(26, 50, 61);
     display:flex;
     justify-content: center;
@@ -304,6 +312,20 @@ transition: 0.5s;
     color: rgb(11, 136, 219);
     margin: 3px;
 
+}
+.foot-contact{
+    color: white;
+}
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer-contents div{
+    flex: 1 1 270px;
+    max-width: 320px;
 }
 
 

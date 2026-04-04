@@ -8,6 +8,15 @@
     <body>
         <style>
 
+     .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 44, 80);
+    color: white;
+    padding: 10px 20px;
+}
+
         body{
             background-color: #f0f0f0;
             height: 100vh;
@@ -40,6 +49,7 @@
             background-color: #003366;
             color: white;
            
+           
 
            
         }
@@ -47,6 +57,7 @@
         td{
             padding: 12px;
             margin: 8px;
+            
         }
 
 
@@ -58,14 +69,84 @@
             border-radius: 4px;
             text-align: center;
             display: inline-block;
+           
         }
 
       .feature-card{
          display: flex;
          width: 50px;
          height: 50px;
+        
           
-           }
+    }
+        
+           /* .flight-contaier table tr{
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px 5px #ffffff;
+           } */
+ 
+
+ 
+
+/* Footer section  */
+.footer{
+    text-align: center;
+             background-color: rgb(26, 50, 61);
+             padding: 0px 25px;
+}
+
+      .foot-testimounial{
+
+        /* border: 2px solid blueviolet; */
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1px;
+          /* border: 2px solid blue; */
+      }
+        
+    /* .foot-contact{
+       display: flex;
+        justify-content: center;
+        border: 2px solid blue;
+      }  */
+
+
+.footer-container{
+
+
+    background-color: rgb(26, 50, 61);
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-links a i{
+    color: rgb(11, 136, 219);
+    margin: 3px;
+
+}
+.foot-contact{
+    color: white;
+}
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer-contents div{
+    flex: 1 1 270px;
+    max-width: 320px;
+}
 
         
         /* .flight-cell{
@@ -78,7 +159,12 @@
 </head>
 <body>
 
-    <section>
+    <header class="header">
+    <h3>AirPort</h3>
+    <img src="logo.png" width="50">
+    </header
+
+       <section>
         <div class="flight-contaier">
             <h2>پروازونو معلومات</h2>
         
@@ -93,28 +179,20 @@
                     <th>Status</th>
                 </tr>
                 
-                <div class="container">
-                    <div class="flight-card">
-                        <div class="left">
-                           
-                        </div>
-                    </div>
-                </div>
-
                 <tr >
                     
                     <td><div class="feature-card">
                     <img src="D:\Nematullah\AirImage\kam.png" alt="">
                    </div>RQ995</td>
                     <td>ګام ایر</td>
-                    <td>بهرین</td>
+                    <td>بحرین</td>
                     <td>April 2026</td>
                     <td>06:45</td>
                     <td><span class="Status">On Time</span></td>
                    
                 </tr>
 
-                  <tr class=>
+                  <tr >
                     <td><div class="feature-card">
                     <img src="D:\Nematullah\AirImage\flydubai.jpg" alt="">
                    </div>WS750</td>
@@ -162,7 +240,7 @@
                     <td><span class="Status">On Time</span></td>
 
                 </tr>
-                            <tr>
+                    <tr>
                     <td><div class="feature-card">
                     <img src="D:\Nematullah\AirImage\kam.png" alt="">
                    </div>RQ995</td>
@@ -178,6 +256,40 @@
            </table> 
         </div>
     </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-contents">
+               <div class="foot-contact">
+                 
+                    <h3>اړیکه</h3>
+                    <p>+93773032604 :نمبر</p>
+                    <p>nematullahsarwari95.com :ایمل آدرس</p>
+                     <p>پته: کابل افغانستان</p>
+                    
+                </div>
+                
+                <div class="social-links">
+                   <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                   <a href=""><i class="fa-brands fa-youtube"></i></a>
+                   <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+            <div class="foot-testimounial ">
+                <h3>کابل نړیوال هوایی ډکر</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+             
+            </div>
+            
+          
+        </div>
+       
+        <div class="footer-container">
+
+            <p>.2026 AirPort Management&copy; ټول حقوق خوندي دي.</p>
+           
+        </div>
+    </footer>
 
 
     
