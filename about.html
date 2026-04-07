@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ps" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
       
-
-
     <style>
+        body{
+            margin: 0;
+        }
 
     .container{
         /* border: 2px solid black; */
@@ -64,22 +66,21 @@
 
 
 /* Footer section  */
+.footer{
+    text-align: center;
+     background-color: rgb(26, 50, 61);
+}
 
       .foot-testimounial{
-         background-color: rgb(26, 50, 61);
+
         /* border: 2px solid blueviolet; */
         color: white;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         margin-bottom: 1px;
           /* border: 2px solid blue; */
       }
-        
-    /* .foot-contact{
-       display: flex;
-        justify-content: center;
-        border: 2px solid blue;
-      }  */
 
 
 .footer-container{
@@ -101,6 +102,27 @@
     color: rgb(11, 136, 219);
     margin: 3px;
 
+}
+.foot-contact{
+    color: white;
+}
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer-contents div{
+    flex: 1 1 270px;
+    max-width: 320px;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .container {
+        flex-direction: column;
+    }
 }
 
 
@@ -171,30 +193,38 @@
                 </div>
                 </section>
 
-<!-- footer -->
 
-          <footer class="footer">
-        <div class="foot-testimounial ">
-            <h3>کابل نړیوال هوایی ډکر</h3> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
-            <div class="foot-contact">
-             
-                <h3>اړیکه</h3>
-                <p>+93773032604 :نمبر</p>
-                <p>nematullahsarwari95.com :ایمل آدرس</p>
-                 <p>پته: کابل افغانستان</p>
+<!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-contents">
+               <div class="foot-contact">
+                 
+                    <h3>اړیکه</h3>
+                    <p>نمبر :۷۷۳۰۳۲۶۰۴</p>
+                    <p>ایمل آدرس:nematullahsarwari95.com</p>
+                     <p>پته: کابل افغانستان</p>
+                    
+                </div>
                 
+                <div class="social-links">
+                   <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                   <a href=""><i class="fa-brands fa-youtube"></i></a>
+                   <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+            <div class="foot-testimounial ">
+                <h3>کابل نړیوال هوایی ډکر</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+             
             </div>
-           </div>
+            
+          
+        </div>
+       
         <div class="footer-container">
 
-            <p>2026 AirPort Management.&copy; .ټول حقوق خوندي دي</p>
-            <div class="social-links">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+            <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
+           
         </div>
     </footer>
     

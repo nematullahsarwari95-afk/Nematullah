@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passenger</title>
+
+    <style>
+
+        body{
+            margin: 0;
+
+        }
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(33, 44, 80);
+    color: white;
+    padding: 10px 20px;
+
+}
+ h2{
+  display: flex;
+  justify-content: center;
+}
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      
+    }
+
+
+      .box{
+        
+        width: 400px;
+        padding:3rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+         margin: 20px;
+         transition: 0.3s;
+        
+      }
+ 
+
+       .box:hover{
+         transform: translateY(-10px) scale(1.02);
+         box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+       }
+      .box a{
+        text-decoration: none;
+       color: white;
+       background-color: rgb(11, 136, 219);
+       padding: 0.5rem;
+       border-radius: 6px;
+      }
+     
+
+/* Footer section  */
+.footer{
+    text-align: center;
+             background-color: rgb(26, 50, 61);
+             padding: 0px 25px;
+}
+
+      .foot-testimounial{
+
+        /* border: 2px solid blueviolet; */
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1px;
+          /* border: 2px solid blue; */
+      }
+    
+
+
+.footer-container{
+    background-color: rgb(26, 50, 61);
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-links a i{
+    color: rgb(11, 136, 219);
+    margin: 3px;
+
+}
+.foot-contact{
+    color: white;
+}
+.footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer-contents div{
+    flex: 1 1 270px;
+    max-width: 320px;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .container {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+<header class="header">
+    <img src="logo.png" width="50">
+    <h1>خدمات</h1>
+    <h2>AirPort</h2>
+</header>
+
+ <h2>مسافروته </h2>
+<div class="container">
+       
+     
+   <div class="box">
+    <h3>🎫 ټیکټ اخستل</h3>
+    <p> دلته انلاین ټکټ اخستلی سی.....</p>
+     <a href="">ټکټ </a>
+    </div>
+
+       <div class="box">
+    <h3>🪑 څوکۍ ټاکل</h3>
+    <p> تاسو کولی سی خپلی خوښی څاوکۍ وټاکی.....</p>
+    <a href="">ټاکل</a>
+    </div>
+
+
+       <div class="box">
+    <h3>🛄 سامان څارنه</h3>
+    <p> خپل سامان مو دلته شتون لری ......</p>
+    <a href="">سامان</a>
+    </div>
+
+
+       <div class="box">
+    <h3> ✈️ الوتنو حالات</h3>
+    <p> تاسو خپل الوتنی حالت لغو کولی سی.....</p>
+    <a href="">لغو</a>
+    </div>
+
+
+       <div class="box">
+    <h3>📲 check-in</h3>
+    <p>ټول سامان مو دلته چک کیږی........</p>
+     <a href="">چک</a>
+    </div>
+
+
+</div>
+
+
+
+
+<!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-contents">
+               <div class="foot-contact">
+                 
+                    <h3>اړیکه</h3>
+                    <p>نمبر :۷۷۳۰۳۲۶۰۴</p>
+                    <p>ایمل آدرس:nematullahsarwari95.com</p>
+                     <p>پته: کابل افغانستان</p>
+                    
+                </div>
+                
+                <div class="social-links">
+                   <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                   <a href=""><i class="fa-brands fa-youtube"></i></a>
+                   <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+            <div class="foot-testimounial ">
+                <h3>کابل نړیوال هوایی ډکر</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+             
+            </div>
+          
+        </div>
+       
+        <div class="footer-container">
+
+            <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
+           
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ps" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +7,93 @@
      <style>
 
         body{
-            height: 100hv;
+
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
+            align-items: center;
+            background-color: rgb(33, 44, 80);
+        }
+        
+        .login-box{
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px gray;
+            text-align: center;
+        }
+       
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: rgb(17, 148, 209);
+        }
+        .login-box input{
+            width: 100%;
+            padding:10px ;
+            margin: 10px 0;
+            border: 2px solid black;
+            border-radius: 5px;
+
+        }
+
+        .login-box button{
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5pc;
+            cursor: pointer;
+        }
+
+        .login-box button:hover{
+            background: blue;
+
+        }
+       
+        .login-box a{
+            text-emphasis: none;
+            color: #007bff;
+        }
+
+        .exra{
+            margin-top: 10px;
+
         }
 
 
-
-     .Login{
-        width:500px;
-        height: 400px;
-        background: white;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      flex-direction: column;
-
-     }
-
+ 
 
      </style>
 </head>
 <body>
  
- <div class="Login">
-    <h2>Login</h2>
-    <form>
-        <label for="">user Name</label>
-        <input type="text">
+ <div class="login-box">
+    <h2>داخل شی</h2>
+    
+        <label for="">کارونکی نوم</label>
+        <input type="text" placeholder=" نوم">
 
-        <label for="">Email</label>
-        <input type="text">
+        <label for="">ایمل آدرس</label>
+        <input type="text" placeholder="ایمل">
 
-        <label for="">password</label>
-        <input type="text">
-    </form>
+        <label for="">پاسورد</label>
+        <input type="text" placeholder="پاسورد">
+
+       <button>ننوتل</button>
+    <div class="exra">
+        <p> <a href="#"> پسوردهیردی</a></p>
+        <p>  حساب نه لری <a href="#">ثبت یی کړی  </a></p>
+    </div>
+    
  </div>
+
+
+
+ 
     
 </body>
 </html>
