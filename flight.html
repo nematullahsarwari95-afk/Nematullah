@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Document</title>
-    <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styleAirport.css">
+    <title>filght</title>
         <style>
+   
 
-     .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(33, 44, 80);
-    color: white;
-    padding: 10px 20px;
-}
 
-        body{
-            margin: 0;
-            background-color: #f0f0f0;
-            height: 100vh;
-        }
-        
+
+
+ .flight-contaier{
+    font-size: 25px;
+  
+ }
 
         h2{
             text-align: center;
@@ -67,96 +63,100 @@
            
         }
 
-      .feature-card{
-         display: flex;
-         width: 50px;
-         height: 50px;
-        
-          
+    .feature-card1{
+       display: flex;
+
+           
     }
-        
- 
 
-/* Footer section  */
-.footer{    
-        
-             text-align: center;
-             background-color: rgb(26, 50, 61);
-              padding: 12px; 
+    .feature-card1 img{
+        width: 50px;
+       height: 50px;
+    object-fit: contain;
 }
 
-      .foot-testimounial{
-         
-        color: white;
-        display: flex;
-        justify-content: center;
+    /* MOBILE */
+@media (max-width: 768px){
+    .container {
         flex-direction: column;
-        margin-bottom: 1px;
-        
-      }
-        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-.footer-container{
-
-
-    background-color: rgb(26, 50, 61);
-    display:flex;
-    justify-content: center;
-    color: white;
+    .flight-contaier{
+        overflow-x: auto;
+    }
+    table{
+        min-width: 700px;
+    }
 }
 
-.social-links{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+    /* media queries */
+    @media (max-width: 768px) {
+     nav ul {
+     flex-direction: column;
+     width: 100%;
+        flex-wrap: wrap;
+     
+   }
+
+   nav {
+     flex-direction: column;
+     align-items: flex-start;
+        flex-wrap: wrap;
+   }
+
 }
 
-.social-links a i{
-    color: rgb(11, 136, 219);
-    margin: 3px;
+/* media queries */
 
-}
-.foot-contact{
-    color: white;
-}
-.footer-contents{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-.footer-contents div{
-    flex: 1 1 270px;
-    max-width: 320px;
-}
 
-    
 
-        </style>
-    </body>
+ </style>
 </head>
+
 <body>
 
-    <header class="header">
-       
-    <img src="logo.png" width="50">
-     <h2>پروازونه</h2>
-    <h3>AirPort</h3>
-   
-    </header>
 
+     <header class="container-fluid">
+        <nav>
+
+            <div class="Logo">
+            
+            <img src="./logo.png" alt="" width="60" height="60">
+            <h3>کابل هوایی ډګر</h3>
+            </div>
+
+            <div class="nav-item">
+                <ul>
+                   <li> <a href="index.html"> کور پاڼه</a></li>
+                    <li> <a href="about.html"> په اړه</a></li>
+                    <li> <a href="flight.html">  الوتنی</a></li>
+                    <li> <a href="port.html">هوایی ډګرونه</a> </li>
+                    <li> <a href="news1.html"> خبرونه</a></li>
+                    <li> <a href="sarvice.html"> خدمات</a></li>
+                   
+                </ul>
+            </div>
+
+                 <div class="Login-links">
+                <a href="login.html">داخل شی</a>
+                <a href="#">راجستر</a>
+            </div>
+        </nav>
+
+    </header>
        <section>
         <div class="flight-contaier">
-            <h2>پروازونو معلومات</h2>
+            <h2>الوتنو معلومات</h2>
         
            <table> 
                 
                 <tr>
                     <th>طیاره</th>
                     <th>شرکت</th>
-                    <th>پرواز هدف</th>
+                    <th>الوتنی هدف</th>
                     <th>نیټه</th>
                     <th>وخت</th>
                     <th>حالت</th>
@@ -164,74 +164,74 @@
                 
                 <tr >
                     
-                    <td><div class="feature-card">
+                    <td><div class="feature-card1">
                     <img src="D:\Nematullah\AirImage\kam.png" alt="">
                    </div>RQ995</td>
                     <td>ګام ایر</td>
                     <td>بحرین</td>
-                    <td>April 2026</td>
+                    <td>April 2026/3/24</td>
                     <td>06:45</td>
-                    <td><span class="Status">On Time</span></td>
+                    <td><span class="Status">ماښام</span></td>
                    
                 </tr>
 
                   <tr >
-                    <td><div class="feature-card">
+                    <td><div class="feature-card1">
                     <img src="D:\Nematullah\AirImage\flydubai.jpg" alt="">
                    </div>WS750</td>
-                    <td>دوبی۱</td>
+                    <td> باختر</td>
                     <td>ریاض</td>
-                    <td>April 2026</td>
+                    <td>April 2026/2/24</td>
                     <td>03:35</td>
-                    <td><span class="Status"> On Time</span> </td>
+                    <td><span class="Status"> سهار </span> </td>
 
                 </tr>
 
 
 
                      <tr>
-                    <td><div class="feature-card">
+                    <td><div class="feature-card1">
                     <img src= "D:\Nematullah\AirImage\airarabia.png"alt="">
                    </div>WS750</td>
                     <td>ترکیش</td>
                     <td>امارت</td>
-                    <td>April 2026</td>
+                    <td>April 2026/3/12</td>
                     <td>08:45</td>
-                    <td><span class="Status">On Time</span></td>
+                    <td><span class="Status">مازیګر </span></td>
 
                 </tr>
                             <tr>
-                    <td><div class="feature-card">
+                    <td><div class="feature-card1">
                     <img src="D:\Nematullah\AirImage\flydubai.jpg" alt="">
                    </div>TK707</td>
-                    <td>دوبی۱</td>
+                    <td>باختر</td>
                     <td>دوبی</td>
-                    <td>April 2026</td>
+                    <td>April 2026/5/4</td>
                     <td>10:45</td>
-                    <td><span class="Status"> On Time</span> </td>
+                    <td><span class="Status"> ماخستن</span> </td>
 
                 </tr>
 
-                                <tr>
-                    <td><div class="feature-card">
+                    <tr>
+                    <td><div class="feature-card1">
                     <img src="D:\Nematullah\AirImage\ariana.png"alt="">
                    </div>GY860</td>
                     <td>اریانا افغان</td>
                     <td>تهران</td>
-                    <td>April 2026</td>
+                    <td>April 2026/2/1</td>
                     <td>09:00</td>
-                    <td><span class="Status">On Time</span></td>
+                    <td><span class="Status">غرمه</span></td>
 
                 </tr>
                     <tr>
-                    <td><div class="feature-card">
+                    <td><div class="feature-card1">
                     <img src="D:\Nematullah\AirImage\kam.png" alt="">
                    </div>RQ995</td>
                     <td>ګام ایر</td>
                     <td>انقره</td>
-                    <td>April 2026</td>
+                    <td>April 2026/6/2</td>
                     <td>04:20</td>
-                    <td><span class="Status"> On Time</span> </td>
+                    <td><span class="Status"> ماسپښین</span> </td>
 
                 </tr>
 
@@ -245,7 +245,7 @@
         <div class="footer-contents">
                <div class="foot-contact">
                  
-                    <h3>اړیکه</h3>
+                    <h3>زموږسره اړبکه</h3>
                     <p>+93773032604 :نمبر</p>
                     <p>nematullahsarwari95.com :ایمل آدرس</p>
                      <p>پته: کابل افغانستان</p>
@@ -260,20 +260,23 @@
                </div>
             <div class="foot-testimounial ">
                 <h3>کابل نړیوال هوایی ډکر</h3> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+               <p>هوایی ډکر خدمات وړاندی کولو سره تاسو ته اسانتیاوی برابر وی.</p> 
              
             </div>
+
+            <div  class="policy">
+                 <a href="">قانون</a>
+                <a href="">پالیسی</a>
+            </div>
+          
             
           
         </div>
-       
         <div class="footer-container">
-
-            <p>.2026 AirPort Management&copy; ټول حقوق خوندي دي.</p>
+           <p>.2026 AirPort Management&copy; ټول حقوق خوندي دي.</p>
            
         </div>
     </footer>
-
 
     
 </body>
