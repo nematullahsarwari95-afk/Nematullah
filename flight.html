@@ -12,77 +12,110 @@
         <style>
    
 
+.section-flight{
+    width: 100%;
+    height: auto;
 
 
+  }
 
- .flight-contaier{
-    font-size: 25px;
+   .flight-contaier{
+     font-size: 25px;
+    width: 100%;
+    min-height: auto;
+    
+     
+   }
+
+   h1{
+    text-align: center;
+   }
+
+   .search{
+     width: 100%;
+     height:3rem;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 10px;
+   }
+
+   .search input{
+     width: 30%;
+     height: 90%;
+     font-size: 1.1rem;
+     border: 0;
+     outline: 0;
+     border-left: 5px solid #003366;
+     background-color:white;
+     box-shadow:  0 0 3px black;
+   }
+
+   .search button{
+      width: 6%;
+      height: 93%;
+      font-size: 1.1rem;
+      border: 0;
+      outline: 0;
+      background-color: white;
+      border-right: 5px solid #003366;
+      box-shadow:  0 0 3px black;
+   }
+
+    h2{
+     text-align: center;
+     margin-bottom: 15px;
+    }
+         
+    table{
+        width: 100%;
+        /* max-width:700px ; */
+
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    th, td{
+       padding: 10px;
+    }
+        
+    th{
+      background-color: #003366;
+      color: white; 
+    }
+
+    td{
+      padding: 12px;
+      margin: 8px; 
+    }
   
- }
-
-        h2{
-            text-align: center;
-            margin-bottom: 15px;
-        }
-         
-        table{
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-        
-        }
-
-        th, td{
-            padding: 10px;
-        
-          
-        }
-        
-        th{
-            background-color: #003366;
-            color: white;
-           
-           
-        }
-
-        td{
-            padding: 12px;
-            margin: 8px;
-            
-        }
-
-
-         
-        .Status{
-            background-color: rgb(11, 136, 219);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            text-align: center;
-            display: inline-block;
-           
-        }
+    .Status{
+        background-color: rgb(11, 136, 219);
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        text-align: center;
+        display: inline-block; 
+    }
 
     .feature-card1{
-       display: flex;
-
-           
+       display: flex;    
     }
 
     .feature-card1 img{
-        width: 50px;
-       height: 50px;
-    object-fit: contain;
-}
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+   }
 
-    /* MOBILE */
+
+/* media queries */
 @media (max-width: 768px){
-    .container {
+    /* .container {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .flight-contaier{
         overflow-x: auto;
@@ -90,26 +123,18 @@
     table{
         min-width: 700px;
     }
-}
-
-    /* media queries */
-    @media (max-width: 768px) {
-     nav ul {
+       nav {
+     flex-direction: column;
+     align-items: flex-start;
+        flex-wrap: wrap;
+   }
+         nav ul {
      flex-direction: column;
      width: 100%;
         flex-wrap: wrap;
      
    }
-
-   nav {
-     flex-direction: column;
-     align-items: flex-start;
-        flex-wrap: wrap;
-   }
-
 }
-
-/* media queries */
 
 
 
@@ -145,12 +170,19 @@
                 <a href="#">راجستر</a>
             </div>
         </nav>
-
     </header>
-       <section>
+   
+      <h1>الوتنو معلومات</h1>
+        <h2>سرچ کړی </h2>
+        <div class="search">
+             <button>لټون</button>
+            <input type="text" placeholder="سرچ.....">
+           
+        </div>
+
+
+       <section class="section-flight">
         <div class="flight-contaier">
-            <h2>الوتنو معلومات</h2>
-        
            <table> 
                 
                 <tr>
@@ -171,7 +203,7 @@
                     <td>بحرین</td>
                     <td>April 2026/3/24</td>
                     <td>06:45</td>
-                    <td><span class="Status">ماښام</span></td>
+                    <td><span class="Status">په وخت</span></td>
                    
                 </tr>
 
@@ -183,7 +215,7 @@
                     <td>ریاض</td>
                     <td>April 2026/2/24</td>
                     <td>03:35</td>
-                    <td><span class="Status"> سهار </span> </td>
+                    <td><span class="Status"> په وخت</span> </td>
 
                 </tr>
 
@@ -197,7 +229,7 @@
                     <td>امارت</td>
                     <td>April 2026/3/12</td>
                     <td>08:45</td>
-                    <td><span class="Status">مازیګر </span></td>
+                    <td><span class="Status">په وخت</span></td>
 
                 </tr>
                             <tr>
@@ -208,7 +240,7 @@
                     <td>دوبی</td>
                     <td>April 2026/5/4</td>
                     <td>10:45</td>
-                    <td><span class="Status"> ماخستن</span> </td>
+                    <td><span class="Status"> په وخت</span> </td>
 
                 </tr>
 
@@ -220,7 +252,7 @@
                     <td>تهران</td>
                     <td>April 2026/2/1</td>
                     <td>09:00</td>
-                    <td><span class="Status">غرمه</span></td>
+                    <td><span class="Status">په وخت</span></td>
 
                 </tr>
                     <tr>
@@ -231,11 +263,9 @@
                     <td>انقره</td>
                     <td>April 2026/6/2</td>
                     <td>04:20</td>
-                    <td><span class="Status"> ماسپښین</span> </td>
+                    <td><span class="Status"> په وخت</span> </td>
 
                 </tr>
-
-
            </table> 
         </div>
     </section>
@@ -246,8 +276,8 @@
                <div class="foot-contact">
                  
                     <h3>زموږسره اړبکه</h3>
-                    <p>+93773032604 :نمبر</p>
-                    <p>nematullahsarwari95.com :ایمل آدرس</p>
+                    <p> اړیکه :۰۷۷۳۰۳۲۶۰۴</p>
+                    <p>ایمل ادرس  :nematullahsarwari95</p>
                      <p>پته: کابل افغانستان</p>
                     
                 </div>

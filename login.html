@@ -12,10 +12,6 @@
     <title>Login</title>
      <style>
 
-
-
-
-
       .login-container{
         display: flex;
         justify-content: center;
@@ -27,20 +23,17 @@
         text-align: center;
       }
 
-        
-        .login-box{
-            width: 400px;
-            background: white;
-            padding: 30px;
-           border-radius: 10px;
-            box-shadow: 0 4px 8px gray;
-            text-align: center;
-            margin:10px 0;
-            border-top: 10px solid darkblue;
-             border-bottom: 10px solid darkblue;
-         
-            
-        } 
+   .login-box{
+        width: 400px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px gray;
+        text-align: center;
+        margin:10px 0;
+        border-top: 10px solid darkblue;
+        border-bottom: 10px solid darkblue;
+    } 
        
 
         .login-box h2 {
@@ -53,7 +46,6 @@
             margin: 10px 0;
              border: 2px solid black; 
             border-radius: 10px;
-
         }
 
         .login-box button{
@@ -77,19 +69,15 @@
         }
 
         .exra{
-            margin-top: 10px;
-           
+          margin-top: 10px;
         }
        
         .exra input{
             height: 100px;
-
         }
 
-           
 
-
-/* MOBILE */
+/* media queries */
 @media (max-width: 768px){
     .container {
         flex-direction: column;
@@ -97,25 +85,17 @@
         justify-content: center;
         align-items: center;
     }
+      nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+      nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 }
 
 
-/* media queries */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-
-
-}
- 
 
      </style>
 </head>

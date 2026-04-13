@@ -14,10 +14,6 @@
     <style>
 
 
- 
-
-
-
  h1,h2{
     text-align: center;
 }
@@ -43,7 +39,6 @@
          margin-bottom: 20px;
          transition: 0.3s;
          font-size: 20px;
-
       }
 
      .card:hover{
@@ -53,9 +48,9 @@
      
 
        #cards{
-        border-top:5px solid rgb(11, 136, 219);
+         border-top:5px solid rgb(11, 136, 219);
          border-bottom:5px solid rgb(11, 136, 219);
-       }
+        }
      
 
       .card img{
@@ -74,10 +69,10 @@
 
       .card a{
         text-decoration: none;
-       color: white;
-       background-color: rgb(11, 136, 219);
-       padding: 0.5rem;
-       border-radius: 6px;
+        color: white;
+        background-color: rgb(11, 136, 219);
+        padding: 0.5rem;
+        border-radius: 6px;
       }
     
       .grid{
@@ -88,20 +83,23 @@
      
 
 
-/* MOBILE */
+/* media queries */
 @media (max-width: 768px){
     .container {
+         .container {
         flex-direction: column;
-        display: flex;
-
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
     }
     nav{
         display: flex;
         flex-direction: column;
     }
 }
+
     </style>
-   
 </head>
 <body>
 
@@ -109,9 +107,7 @@
  <!-- HEADER -->
      <header class="container-fluid">
         <nav>
-
             <div class="Logo">
-            
             <img src="./logo.png" alt="" width="60" height="60">
             <h3>کابل هوایی ډګر</h3>
             </div>
@@ -127,76 +123,74 @@
                 </ul>
             </div>
 
-                 <div class="Login-links">
+                <div class="Login-links">
                 <a href="login.html">داخل شی</a>
                 <a href="#">راجستر</a>
-            </div>
+                </div>
         </nav>
-
     </header>
 
 
 
 <section>
- <h1>کابل هوایی ډګر</h1>
-<div class="container">
-       
+   <h1>کابل هوایی ډګر</h1>
+   <div class="container"> 
     <div class="card" >
          <img src="Airp.jpg" alt="">
     </div>
 
-   <div class="card">
-    <h3>تاریخچه</h3>
-    <p>د ﮐﺎﺑﻞ ﻫﻮاﻳﻲ ډګرﭼﯥ ﭘﻪ ﻟﻮﻣړﻳﻮ ﮐﯥ د ﺧﻮاﺟﻪ رواش ﭘﻪ ﻧﻮم ﻳﺎدﯦﺪه، ﭘﻪ ﭘﻼزﻣﯧﻨﻪ ﮐﺎﺑﻞ ﮐﯥ ﻣﻮﻗﻌﻴﺖ ﻟﺮي. دا ﻫﻮاﻳﻲ ډګر ﭘﻪ ﻟﻮﻣړﻳﻮ ﮐﯥ ﭘﻪ ﺧﺎﻣﻪ ډول ﺟﻮړ ﺷﻮی و، ﭼﯥ د ﻫﻮاﻳﻲ ځواﮐﻮﻧﻮ ﻧﻈﺎﻣﻲ اﻟﻮﺗﮑﻮ او د ﻫﻮاﻳﻲ ﭼﻠﻨﺪ ﻣﻮﺳﺴﺎﺗﻮ ﻟﺨﻮا ﺗﺮې ه ﭘﻮرﺗﻪ ﮐﯧﺪه. ﭘﻪ ۱۳۳۳ل ﮐﺎل د ارﻳﺎﻧﺎ اﻓﻐﺎن ﻫﻮاﻳﻲ ﴍﮐﺖ د   «ډي ﳼ ـ ۳ » اﻟﻮﺗﮑﻮ ﺗﺮې ګټه ﭘﻮرﺗﻪ ﮐﻮﻟﻪ او ﻟﻪ دې ﴎه
+     <div class="card">
+       <h3>تاریخچه</h3>
+       <p>د ﮐﺎﺑﻞ ﻫﻮاﻳﻲ ډګرﭼﯥ ﭘﻪ ﻟﻮﻣړﻳﻮ ﮐﯥ د ﺧﻮاﺟﻪ رواش ﭘﻪ ﻧﻮم ﻳﺎدﯦﺪه، ﭘﻪ ﭘﻼزﻣﯧﻨﻪ ﮐﺎﺑﻞ ﮐﯥ ﻣﻮﻗﻌﻴﺖ ﻟﺮي. دا ﻫﻮاﻳﻲ ډګر ﭘﻪ ﻟﻮﻣړﻳﻮ ﮐﯥ ﭘﻪ ﺧﺎﻣﻪ ډول ﺟﻮړ ﺷﻮی و، ﭼﯥ د ﻫﻮاﻳﻲ ځواﮐﻮﻧﻮ ﻧﻈﺎﻣﻲ اﻟﻮﺗﮑﻮ او د ﻫﻮاﻳﻲ ﭼﻠﻨﺪ ﻣﻮﺳﺴﺎﺗﻮ ﻟﺨﻮا ﺗﺮې ه ﭘﻮرﺗﻪ ﮐﯧﺪه. ﭘﻪ ۱۳۳۳ل ﮐﺎل د ارﻳﺎﻧﺎ اﻓﻐﺎن ﻫﻮاﻳﻲ ﴍﮐﺖ د   «ډي ﳼ ـ ۳ » اﻟﻮﺗﮑﻮ ﺗﺮې ګټه ﭘﻮرﺗﻪ ﮐﻮﻟﻪ او ﻟﻪ دې ﴎه
          ﭘﻪ ﺧﻮا ﮐﯥ د انډیمار   (K L M  )  ﻫﺎﻟﻨډي اﻳﺮپلوټ او ځینو ﻧﻮرو ﻫﻮاﻳﻲ ﴍﮐﺘﻮﻧﻮ ﻫﻢ ﻟﻪ دې ﻫﻮاﻳﻲ ډگر څخه ﺧﭙﻠﯥ اﻟﻮﺗﻨﯥ ﺗﺮﴎه ﮐﻮﻟﯥ. وروﺳﺘﻪ ﺑﻴﺎ د ارﻳﺎﻧﺎ اﻓﻐﺎن ﻫﻮاﻳﻲ ﴍﮐﺖ ډي ﳼ ۴ او ۶ ﻟﻮﻳﻮ اﻟﻮﺗﮑﻮ ﻫﻢ ﻟﻪ دې ﻫﻮاﻳﻲ ډگر څخه ګټه 
           ﭘﻮرﺗﻪ ﮐﻮﻟﻪ</p>
-     <a href="">نور ولولی...</a>
+        <a href="">نور ولولی...</a>
      </div>
    
      <h1>مشخصات</h1>
-    <div class="grid" >
-        
+      <div class="grid" >
         <div class="card" id="cards">
             <h2>خدمات</h2>
             <ul>
                 <li>ټکسی</li>
-                 <li>Wi-Fi</li>
-                  <li>ATM</li>
-                   <li>رستورانټ</li>
+                <li>Wi-Fi</li>
+                <li>ATM</li>
+                <li>رستورانټ</li>
+                <li>ګانتین</li>
+                <li>بخش طبی</li>
             </ul>
         </div>
 
 
-                <div class="card" id="cards">
-            <h2> امنیتی</h2>
-            <ul>
+            <div class="card" id="cards">
+             <h2> امنیتی</h2>
+             <ul>
                 <li>امنتی ځواکونو کنټرول</li>
-                 <li>دسامان سکین ماشین</li>
-                  <li>د مسافروبشپړ تلاشی سیستم</li>
-                   <li></li>
-            </ul>
-        </div>
+                <li>دسامان سکین ماشین</li>
+                <li>د مسافروبشپړ تلاشی سیستم</li>
+                <li>امنتی کامری</li>
+                <li>مجرمین ثبت</li>
+                <li>الوتکومحافظین</li>
+             </ul>
+            </div>
 
 
-                <div class="card" id="cards">
-            <h2>الوتنی</h2>
-            <ul>
-            
-                 <li>کابل➡️استانبول</li>
-                 <li>کابل➡️دوبی</li>
-                 <li>کابل➡️استانبول</li>
-                 <li>کابل➡️تهران</li>
-                 <li>کابل➡️بحرین</li>
-                 <li>کابل➡️ریاض</li>
-            </ul>
+            <div class="card" id="cards">
+              <h2>الوتنی</h2>
+             <ul>
+                 <li>کابل ⬅️استانبول</li>
+                 <li>کابل ⬅️دوبی</li>
+                 <li>کابل ⬅️استانبول</li>
+                 <li>کابل ⬅️تهران</li>
+                 <li>کابل ⬅️بحرین</li>
+                 <li>کابل ⬅️ریاض</li>
+             </ul>
         </div>
     </div>
 
-
-    <div class="card" style="text-align:center;">
+     <div class="card" style="text-align:center;">
         <a href="port.html" class="btn">⬅ نور هوایی ډګرونه</a>
-    </div>
-
+     </div>
 </div>
 </section>
 
@@ -210,7 +204,6 @@
                     <p>نمبر :۷۷۳۰۳۲۶۰۴</p>
                     <p>ایمل آدرس:nematullahsarwari95.com</p>
                      <p>پته: کابل افغانستان</p>
-                    
                 </div>
                 
                 <div class="social-links">
@@ -222,20 +215,15 @@
             <div class="foot-testimounial ">
                 <h3>کابل نړیوال هوایی ډکر</h3> 
                 <p>هوایی ډکر خدمات وړاندی کولو سره تاسو ته اسانتیاوی برابر وی.</p> 
-             
             </div>
                 <div  class="policy">
                 <a href="">قانون</a>
                 <a href="">پالیسی</a>
-                 
             </div>
-          
         </div>
        
         <div class="footer-container">
-
             <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
-           
         </div>
     </footer>
     

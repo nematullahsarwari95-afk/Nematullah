@@ -13,13 +13,9 @@
 
     <style>
 
-
-
- h1{
-text-align: center;
-
- }
-
+  h1{
+   text-align: center;
+  }
 
     .container{
         width: 100%;
@@ -28,12 +24,11 @@ text-align: center;
         align-items: center;
         margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 30px;
+        font-size: 25px;
         flex-wrap: wrap;
-
     }
 
-      .box{
+    .box{
         width:30%;
         flex: 1 1 250px;
         padding:3rem;
@@ -41,58 +36,56 @@ text-align: center;
         color: white;
         border-radius: 10px;
         box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-         margin: 20px;
-         transition: 0.3s;
-          border-top:5px solid rgb(11, 136, 219);
-          border-bottom:5px solid rgb(11, 136, 219); 
-         
-        
+        margin: 20px;
+        transition: 0.3s;
+        border-top:5px solid rgb(11, 136, 219);
+        border-bottom:5px solid rgb(11, 136, 219); 
       }
  
 
-       .box:hover{
-         transform: translateY(-10px) scale(1.02);
-         box-shadow: 0 20px 35px rgba(0,0,0,0.2);
-       }
+    .box:hover{
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+    }
 
-      .box a{
-         text-decoration: none;
-         color: white;
-         background-color: rgb(11, 136, 219);
-         padding: 0.5rem;
-         border-radius: 6px;
+    .box a{
+       text-decoration: none;
+       color: white;
+       background-color: rgb(11, 136, 219);
+       padding: 0.5rem;
+       border-radius: 6px;
+       display: flex;
+       justify-content: center;
        }
      
 
-       h3{
-        display: flex;
-        justify-content: center;
-       }
+     h3{
+       display: flex;
+       justify-content: center;
+     }
   
-
 
 
    /* media queries */
  @media (max-width: 768px) {
-       .container {
+    .container {
         display: flex;
         /* flex-direction: column; */
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    .container .box {
-        width: 150px;
+     .container .box {
+       width: 150px;
     }
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
+     nav ul {
+      flex-direction: column;
+      width: 100%;
+   }
 
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-
+     nav {
+     flex-direction: column;
+     align-items: flex-start;
   }
   
 } 
@@ -101,12 +94,9 @@ text-align: center;
 </head>
 <body>
 
-
         <header class="container-fluid">
         <nav>
-
             <div class="Logo">
-            
             <img src="./logo.png" alt="" width="60" height="60">
             <h3>کابل هوایی ډګر</h3>
             </div>
@@ -121,67 +111,59 @@ text-align: center;
                     <li> <a href="port.html">هوایی ډګرونه</a> </li>
                     <li> <a href="news1.html"> خبرونه</a></li>
                     <li> <a href="sarvice.html"> خدمات</a></li>
-                   
                 </ul>
-            </div>
 
-                 <div class="Login-links">
+            </div>
+                <div class="Login-links">
                 <a href="login.html">داخل شی</a>
                 <a href="#">راجستر</a>
             </div>
         </nav>
-
     </header>
 
 
-<h1>زموږ خدمات</h1>
-<div class="container">
-  
-    
-   <div class="box">
-    <h3>🎫 ټیکټ اخستل</h3>
-    <p> دلته انلاین ټکټ اخستلی سی.....</p>
-     <a href="">ټکټ </a>
-    </div>
+   <h1>زموږ خدمات</h1>
+   <div class="container">
 
-       <div class="box">
-    <h3>🪑 څوکۍ ټاکل</h3>
-    <p> تاسو خپلی خوښی څاوکۍ وټاکی.....</p>
-    <a href="">ټاکل</a>
-    </div>
+      <div class="box">
+      <h3>🎫 ټیکټ اخستل</h3>
+      <p> دلته انلاین ټکټ اخستلی سی.....</p>
+      <a href="">ټکټ </a>
+      </div>
 
-
-       <div class="box">
-    <h3>🛄 سامان څارنه</h3>
-    <p> خپل سامان مو دلته شتون لری ......</p>
-    <a href="">سامان</a>
-    </div>
+      <div class="box">
+      <h3>🪑 څوکۍ ټاکل</h3>
+      <p> تاسو خپلی خوښی څاوکۍ وټاکی.....</p>
+      <a href="">ټاکل</a>
+      </div>
 
 
-       <div class="box">
-    <h3> ✈️ الوتنو حالات</h3>
-    <p> تاسو خپل الوتنی حالت لغو کولی سی.....</p>
-    <a href="">لغو</a>
-    </div>
+      <div class="box">
+      <h3>🛄 سامان څارنه</h3>
+      <p> خپل سامان مو دلته شتون لری ......</p>
+      <a href="">سامان</a>
+      </div>
 
 
-    <div class="box">
-    <h3>📲 check-in</h3>
-    <p>ټول سامان مو دلته چک کیږی........</p>
-     <a href="">چک</a>
-    </div>
+      <div class="box">
+      <h3> ✈️ الوتنو حالات</h3>
+      <p> تاسو خپل الوتنی حالت لغو کولی سی.....</p>
+      <a href="">لغو</a>
+      </div>
+
+
+      <div class="box">
+      <h3>📲 check-in</h3>
+      <p>ټول سامان مو دلته چک کیږی........</p>
+      <a href="">چک</a>
+      </div>
     
       <div class="box">
-    <h3>🔔 خبرتیاوی</h3>
-    <p>SMS/APP/او ایمل له لاری خبر درکول کیږی....</p>
-     <a href="">کتل</a>
+      <h3>🔔 خبرتیاوی</h3>
+      <p>SMS/APP/او ایمل له لاری خبر درکول کیږی....</p>
+      <a href="">کتل</a>
     </div>
-
-
-
 </div>
-
-
 
 
 <!-- Footer section -->
@@ -197,10 +179,10 @@ text-align: center;
                 </div>
                 
                 <div class="social-links">
-                   <a href=""><i class="fa-brands fa-facebook">  facebook</i></a>
-                   <a href=""><i class="fa-brands fa-linkedin"> linked</i></a>
-                   <a href=""><i class="fa-brands fa-youtube">  youtub</i></a>
-                   <a href=""><i class="fa-brands fa-whatsapp">  Whatsapp</i></a>
+                   <a href=""><i class="fa-brands fa-facebook"> </i></a>
+                   <a href=""><i class="fa-brands fa-linkedin"> </i></a>
+                   <a href=""><i class="fa-brands fa-youtube">  </i></a>
+                   <a href=""><i class="fa-brands fa-whatsapp"> </i></a>
                </div>
             <div class="foot-testimounial ">
                 <h3>کابل نړیوال هوایی ډکر</h3> 
@@ -216,9 +198,7 @@ text-align: center;
         </div>
        
         <div class="footer-container">
-
             <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
-           
         </div>
     </footer>
     

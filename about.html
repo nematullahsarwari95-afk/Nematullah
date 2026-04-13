@@ -13,59 +13,52 @@
 
 
 
+  .container{
+     max-width: 1100px;
+     margin: auto;
+     padding: 40px 20px;
+   }
+
+   h1{
+     text-align: center;
+   }
+
+   .cards{
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     flex-wrap: wrap;
+     font-size: 30px;
+  }
+
+  .card{
+     background-color: #1C0770;
+     color: white;
+     border-radius: 12px;
+     box-shadow: 0 0 5px black;
+     padding: 20px;
+     transition: 0.3s;
+     justify-content: center;
+   }
+
+   .card:hover{
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+    }
+
+  .card h3{
+     color:white;
+     margin-bottom: 10px;
+   }
+
+  .card img{
+     width: 100%;
+     height: auto;
+     border-radius: 12px;
+   }
 
 
-
-.container{
-max-width: 1100px;
-margin: auto;
-padding: 40px 20px;
-
-    
-}
-
-h1{
-    text-align: center;
-}
-.cards{
-
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 30px;
-    
-}
-
-
-.card{
-        background-color: #1C0770;
-    color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 5px black;
-    padding: 20px;
-    transition: 0.3s;
-    justify-content: center;
-}
-.card:hover{
-        transform: translateY(-10px) scale(1.02);
-         box-shadow: 0 20px 35px rgba(0,0,0,0.2);
-}
-
-
-.card h3{
-    color:white;
-    margin-bottom: 10px;
-
-}
-.card img{
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-
-/* MOBILE */
+/* media queries */
 @media (max-width: 768px){
     .container {
         flex-direction: column;
@@ -85,7 +78,6 @@ h1{
             <img src="./logo.png" alt="" width="60" height="60">
             <h3>کابل هوایی ډګر</h3>
             </div>
-
             <div class="nav-item">
                 <ul>
                    <li> <a href="index.html"> کور پاڼه</a></li>
@@ -94,19 +86,15 @@ h1{
                     <li> <a href="port.html">هوایی ډګرونه</a> </li>
                     <li> <a href="news1.html"> خبرونه</a></li>
                     <li> <a href="sarvice.html"> خدمات</a></li>
-                   
                 </ul>
-            </div>
 
+            </div>
                  <div class="Login-links">
-                <a href="login.html">داخل شی</a>
-                <a href="#">راجستر</a>
+                 <a href="login.html">داخل شی</a>
+                 <a href="#">راجستر</a>
             </div>
         </nav>
     </header>
-
-
-
 
 
     <div class="container">
@@ -115,57 +103,35 @@ h1{
             <div class="card">
                 <img src="fe.jpg" alt="">
                 <h3>د افغانستان هوایي تاریخ:</h3>
-                     <p>په افغانستان کې د هوايي چلند تاریخ د شلمې پېړۍ له پیل څخه شروع شوی دی. لومړنی هوايي شرکت د ۱۹۵۰مو کلونو په شاوخوا کې جوړ شو. وروسته اریاناافغان هوایی شرکت د هېواد ملي هوايي شرکت په توګه فعالیت پیل کړ. د جګړو له امله دا سکتور زیانمن شو، خو وروسته بیا ورو ورو ورغول شو. اوس افغانستان هڅه کوي چې خپل هوايي سیستم بیا عصري او پرمختللی کړي.</p>
+                <p>په افغانستان کې د هوايي چلند تاریخ د شلمې پېړۍ له پیل څخه شروع شوی دی. لومړنی هوايي شرکت د ۱۹۵۰مو کلونو په شاوخوا کې جوړ شو. وروسته اریاناافغان هوایی شرکت د هېواد ملي هوايي شرکت په توګه فعالیت پیل کړ. د جګړو له امله دا سکتور زیانمن شو، خو وروسته بیا ورو ورو ورغول شو. اوس افغانستان هڅه کوي چې خپل هوايي سیستم بیا عصري او پرمختللی کړي.</p>
             </div>
 
 
                 <div class="card">
-                <h3>زموږ هدف:</h3>
-               <p>زموږ هدف دا دی چې د مسافرو لپاره خوندي، اسانه او چټک هوایي خدمات برابر کړو. موږ هڅه کوو چې د نوې ټکنالوژۍ په کارولو سره د سفر تجربه نوره هم ښه کړو. د مشتریانو رضایت زموږ لومړیتوب دی. موږ د کیفیت او باور پر بنسټ خدمات وړاندې کوو. همدارنګه غواړو چې نړیوال معیارونه پوره کړو.</p>
-            </div>
+                 <h3>زموږ هدف:</h3>
+                 <p>زموږ هدف دا دی چې د مسافرو لپاره خوندي، اسانه او چټک هوایي خدمات برابر کړو. موږ هڅه کوو چې د نوې ټکنالوژۍ په کارولو سره د سفر تجربه نوره هم ښه کړو. د مشتریانو رضایت زموږ لومړیتوب دی. موږ د کیفیت او باور پر بنسټ خدمات وړاندې کوو. همدارنګه غواړو چې نړیوال معیارونه پوره کړو.</p>
+               </div>
 
 
-                <div class="card">
-                <h3>تاریخچه</h3>
-                     <p>موږ یو عصري او باوري هوایی ډکر معتومات  وړاندې کوو چې د هوايي ډګرونو د عملیاتو ساده کولو، چټکتیا
+                 <div class="card">
+                   <h3>تاریخچه</h3>
+                    <p>موږ یو عصري او باوري هوایی ډکر معتومات  وړاندې کوو چې د هوايي ډګرونو د عملیاتو ساده کولو، چټکتیا
                      او خوندیتوب ته وده ورکوي. زموږ هدف دا دی چې د ټکنالوژۍ له لارې د مسافرو
                       او کارکوونکو تجربه ښه کړو.</p>
-            </div>
-
-        </div>
-
-
-
+                  </div>
+         </div>
     </div>
 
-
-
-
-    
-            
-<!-- 
-          <section>
-   <h2>زموږپه اړه</h2>
-    <div class="container">
-   <div class="card">
-    <h3>تاریخچه</h3>
-     <p>موږ یو عصري او باوري هوایی ډکر معتومات  وړاندې کوو چې د هوايي ډګرونو د عملیاتو ساده کولو، چټکتیا
-                     او خوندیتوب ته وده ورکوي. زموږ هدف دا دی چې د ټکنالوژۍ له لارې د مسافرو
-                      او کارکوونکو تجربه ښه کړو.</p>
-     <a href="">نور ولولی...</a>
-     </div> -->
    
    
      <!-- Footer section -->
     <footer class="footer">
         <div class="footer-contents">
                <div class="foot-contact">
-                 
                     <h3>اړیکه</h3>
-                    <p>نمبر :۷۷۳۰۳۲۶۰۴</p>
+                    <p>نمبر :۷۷۳۰۳۲۶۰۴ </p>
                     <p>ایمل آدرس:nematullahsarwari95.com</p>
-                     <p>پته: کابل افغانستان</p>
-                    
+                    <p>پته: کابل افغانستان</p>
                 </div>
                 
                 <div class="social-links">
@@ -174,23 +140,21 @@ h1{
                    <a href=""><i class="fa-brands fa-youtube"></i></a>
                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                </div>
+
             <div class="foot-testimounial ">
                 <h3> هوایی ډکر</h3> 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
              
             </div>
-                 <div  class="policy">
-                 <a href=""> قانون</a>
-                 <a href="">پالیسی</a>
+                <div  class="policy">
+                <a href=""> قانون</a>
+                <a href="">پالیسی</a>
             </div>
             
           
         </div>
-       
         <div class="footer-container">
-
             <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
-           
         </div>
     </footer>
 </body>
