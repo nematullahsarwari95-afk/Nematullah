@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleAirport.css">
+    <title>Login</title>
+     <style>
+
+      .login-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 39px;
+        font-size: 30px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+   .login-box{
+        width: 400px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px gray;
+        text-align: center;
+        margin:10px 0;
+        border-top: 10px solid darkblue;
+        border-bottom: 10px solid darkblue;
+    } 
+       
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-box input{
+            width: 100%;
+            padding:10px ;
+            margin: 10px 0;
+             border: 2px solid black; 
+            border-radius: 10px;
+        }
+
+        .login-box button{
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5pc;
+            cursor: pointer;
+        }
+
+        .login-box button:hover{
+           background-color: #1C0770;
+
+        }
+       
+        .login-box a{
+            text-emphasis: none;
+            color: #007bff;
+        }
+
+        .exra{
+          margin-top: 10px;
+        }
+       
+        .exra input{
+            height: 100px;
+        }
+
+
+/* media queries */
+@media (max-width: 768px){
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+      nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+      nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+
+
+     </style>
+</head>
+<body>
+
+
+
+ <header class="container-fluid">
+        <nav>
+
+            <div class="Logo">
+            
+            <img src="./logo.png" alt="" width="60" height="60">
+            <h3>کابل هوایی ډګر</h3>
+            </div>
+
+            <div class="nav-item">
+                <ul>
+                   <li> <a href="index.html"> کور پاڼه</a></li>
+                    <li> <a href="about.html"> په اړه</a></li>
+                    <li> <a href="flight.html">  الوتنی</a></li>
+                    <li> <a href="port.html">هوایی ډګرونه</a> </li>
+                    <li> <a href="news1.html"> خبرونه</a></li>
+                    <li> <a href="sarvice.html"> خدمات</a></li>
+                   
+                </ul>
+            </div>
+
+                 <div class="Login-links">
+                <a href="login.html">داخل شی</a>
+                <a href="#">راجستر</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <h1>ښه راغلاست!</h1>
+    <div class="login-container">
+ <div class="login-box">
+    <h3>اکونټ جوړ کړه</h3>
+
+        <label for="">کارونکی نوم</label>
+        <input type="text" placeholder=" نوم">
+        
+        <label for="">ایمل آدرس</label>
+        <input type="text" placeholder="ایمل">
+
+        <label for="">پاسورد</label>
+        <input type="text" placeholder="پاسورد">
+
+       
+    <div class="exra">
+         <label for="">پیام</label>
+        <input type="text" placeholder="پیام">
+        <button>لیږل</button>
+    
+        
+    </div>
+    
+ </div>
+ </div>
+
+
+
+<!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-contents">
+               <div class="foot-contact">
+                 
+                    <h3>اړیکه</h3>
+                    <p>اړیکه:۹۳۷۷۳۰۳۲۶۰۴</p>
+                    <p>ایمل آدرس:nematullahsarwari95.com</p>
+                     <p>پته: کابل افغانستان</p>
+                    
+                </div>
+                
+                <div class="social-links">
+                   <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                   <a href=""><i class="fa-brands fa-youtube"></i></a>
+                   <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+            <div class="foot-testimounial ">
+                <h3>کابل نړیوال هوایی ډکر</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+             
+            </div>
+
+            <div  class="policy">
+                 <a href="">قانون</a>
+                <a href="">پالیسی</a>
+            </div>
+          
+        </div>
+       
+        <div class="footer-container">
+
+            <p>.2026 AirPort Management &copy; ټول حقوق خوندي دي.</p>
+           
+        </div>
+    </footer>
+ 
+    
+</body>
+</html>

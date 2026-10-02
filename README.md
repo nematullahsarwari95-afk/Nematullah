@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [FULL NAME] - Portfolio Website
 
 A modern, premium, professional, responsive, multilingual personal portfolio website built with HTML5, CSS3, and Vanilla JavaScript.
@@ -170,3 +171,6 @@ This project is open source and available for personal use.
 ---
 
 © 2026 [FULL NAME]. All Rights Reserved.
+=======
+# Nematullah
+>>>>>>> 49875f07a3454e93ed0d1375be11a083855a59ae
