@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nematullah Sarwari - Computer Science Student , Programmer , Web Developer Portfolio">
+  <meta name="keywords" content="portfolio, web developer, computer science, HTML, CSS, JavaScript">
+  <meta name="author" content="[Nematullah Sarwari]">
+  <meta property="og:title" content="[Nematullah Sarwari] - Portfolio">
+  <meta property="og:description" content="Computer Science Student , Programmer , Web Developer">
+  <meta property="og:image" content="assets/images/img_large_06.jpg">
+  <meta property="og:type" content="website">
+  <title>Nematullah | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets\images\projects\profile.jpg">
+  <script>
+    window.addEventListener('error', function(e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.target.src = 'assets/images/projects/project-placeholder.svg';
+      }
+    }, true);
+  </script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p class="loading-text" data-i18n="loading.text">Loading...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress" aria-label="Scroll Progress"></div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to Top" >↑</button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="Screenshot" id="lightbox-img">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Home">Nematullah</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+        <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-selector" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ps" data-i18n="langSwitch.pashto">پښتو</button>
+          <button class="lang-btn" data-lang="da" data-i18n="langSwitch.dari">دری</button>
+          <button class="lang-btn" data-lang="en" data-i18n="langSwitch.english">English</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Mobile menu">
+    <button id="mobile-close" class="mobile-close" aria-label="Close menu">&times;</button>
+    <a href="index.html" class="nav-link mobile-menu-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link mobile-menu-link" data-i18n="nav.about">About</a>
+    <a href="#skills" class="nav-link mobile-menu-link" data-i18n="nav.skills">Skills</a>
+    <a href="#services" class="nav-link mobile-menu-link" data-i18n="nav.services">Services</a>
+    <a href="projects.html" class="nav-link mobile-menu-link" data-i18n="nav.projects">Projects</a>
+    <a href="resume.html" class="nav-link mobile-menu-link" data-i18n="nav.resume">Resume</a>
+    <a href="contact.html" class="nav-link mobile-menu-link" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
+        <h1 class="hero-name" data-i18n="hero.name">Nematullah Sarwari</h1>
+        <h2 class="hero-title"><span data-i18n="hero.title">Computer Science Student , Programmer , Web Developer</span><span id="typing-text" class="typing"></span></h2>
+        <p class="hero-description" data-i18n="hero.description">I am a passionate Computer Science student and Web Developer...</p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary" data-i18n="hero.cta1">View My Projects</a>
+          <a href="assets/cv/my-cv.pdf" class="btn btn-outline" download data-i18n="hero.cta2">Download CV</a>
+          <a href="#" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="hero.cta3" id="hero-github-btn">GitHub</a>
+          <a href="contact.html" class="btn btn-primary" data-i18n="hero.cta4">Contact Me</a>
+        </div>
+        <div class="hero-social">
+          <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub" id="social-github">GH</a>
+          <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn" id="social-linkedin">LI</a>
+          <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Instagram" id="social-instagram">IG</a>
+          <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="YouTube" id="social-youtube">YT</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-img-wrapper">
+          <img src="assets\images\projects\profile.jpg" alt="Nematullah" class="profile-img" onerror="this.src='assets/images/profile-placeholder.svg'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="about.sectionTitle">About Me</h2>
+      <p class="section-subtitle reveal">Get to know more about me</p>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="assets\images\projects\profile.jpg" alt="[FULL NAME]" class="about-img" onerror="this.src='assets/images/profile-placeholder.svg'">
+        </div>
+        <div class="about-content reveal">
+          <h3 data-i18n="about.bioTitle">My Biography</h3>
+          <p data-i18n="about.bioText">I am a dedicated Computer Science student...</p>
+          <h3 data-i18n="about.goalsTitle">Career Goals</h3>
+          <p data-i18n="about.goalsText">I aspire to become a professional Full-Stack Web Developer...</p>
+          <div class="about-info">
+            <div class="about-info-item">
+              <span class="icon">🎓</span>
+              <span data-i18n="about.university">[Kandahar UNIVERSITY ]</span>
+            </div>
+            <div class="about-info-item">
+              <span class="icon">📚</span>
+              <span data-i18n="about.faculty">[computer sinces]</span>
+            </div>
+            <div class="about-info-item">
+              <span class="icon">📍</span>
+              <span data-i18n="about.location">[Kabul], [Afghnistan]</span>
+            </div>
+            <div class="about-info-item">
+              <span class="icon">✉️</span>
+              <span data-i18n="about.email">[nematullahsarwari95@gmail.com]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills" style="background:var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="skills.sectionTitle">Skills</h2>
+      <p class="section-subtitle reveal">Technologies and tools I work with</p>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 data-i18n="skills.frontendTitle">Frontend Development</h3>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.html5">HTML5</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.css3">CSS3</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.javascript">JavaScript</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.responsive">Responsive Design</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.uiDesign">UI Design</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 data-i18n="skills.gitTitle">Git & GitHub</h3>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.git">Git</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.github">GitHub</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.repoManagement">Repository Management</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name" data-i18n="skills.versionControl">Version Control</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="services.sectionTitle">Services</h2>
+      <p class="section-subtitle reveal">What I can do for you</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">💻</div>
+          <h3 data-i18n="services.webDev">Web Development</h3>
+          <p data-i18n="services.webDevDesc">Building modern, responsive websites using HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎨</div>
+          <h3 data-i18n="services.frontendDev">Frontend Development</h3>
+          <p data-i18n="services.frontendDevDesc">Creating clean, maintainable frontend code with focus on UX.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📱</div>
+          <h3 data-i18n="services.responsiveSites">Responsive Websites</h3>
+          <p data-i18n="services.responsiveSitesDesc">Designing websites that work perfectly on all devices and screen sizes.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🚀</div>
+          <h3 data-i18n="services.landingPages">Landing Pages</h3>
+          <p data-i18n="services.landingPagesDesc">Designing high-converting landing pages with modern aesthetics.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">⚡</div>
+          <h3 data-i18n="services.jsApps">JavaScript Web Applications</h3>
+          <p data-i18n="services.jsAppsDesc">Developing interactive web applications using vanilla JavaScript.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3 data-i18n="services.portfolioSites">Portfolio Websites</h3>
+          <p data-i18n="services.portfolioSitesDesc">Creating professional portfolio websites to showcase your work.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">✨</div>
+          <h3 data-i18n="services.uiDesign">UI Design</h3>
+          <p data-i18n="services.uiDesignDesc">Designing beautiful and intuitive user interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Preview -->
+  <section class="section" id="projects-preview" style="background:var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="projects.sectionTitle">Projects</h2>
+      <p class="section-subtitle reveal">Some of my recent work</p>
+      <div class="projects-grid" id="featured-projects">
+        <!-- Projects injected by JS -->
+      </div>
+      <div style="text-align:center; margin-top:3rem;" class="reveal">
+        <a href="projects.html" class="btn btn-primary" data-i18n="projects.viewAll">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number" data-count="12">0</div>
+          <div class="stat-label" data-i18n="statistics.projects">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label" data-i18n="statistics.repositories">GitHub Repositories</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label" data-i18n="statistics.certificates">Certificates</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-count="20">0</div>
+          <div class="stat-label" data-i18n="statistics.skills">Skills</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-count="4">0</div>
+          <div class="stat-label" data-i18n="statistics.yearsLearning">Years Learning</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Preview -->
+  <section class="section" id="education" style="background:var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="education.sectionTitle">Education</h2>
+      <p class="section-subtitle reveal">My academic background</p>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-date">2021 - Present</div>
+          <h3 class="timeline-title" data-i18n="education.degree">Computer Science</h3>
+          <p class="timeline-subtitle" data-i18n="education.institution">[Kandhar UNIVERSITY ]</p>
+          <p class="timeline-desc" data-i18n="education.description">Studying core computer science subjects...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Preview -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="certificates.sectionTitle">Certificates</h2>
+      <p class="section-subtitle reveal">My professional certifications</p>
+      <div class="certificates-grid">
+        <div class="certificate-card reveal">
+          <img src="profile.jpg" alt="Certificate" class="certificate-img" onerror="this.src='assets/images/projects/project-placeholder.svg'">
+          <div class="certificate-body">
+            <h3>Web Development Certificate</h3>
+            <p class="certificate-org">Udemy</p>
+            <p class="certificate-date">2023</p>
+            <a href="javascript:void(0)" class="btn btn-outline btn-sm" target="_blank" rel="noopener" data-i18n="certificates.viewCertificate">View Certificate</a>
+          </div>
+        </div>
+        <div class="certificate-card reveal">
+          <img src="profile.jpg" alt="Certificate" class="certificate-img" onerror="this.src='assets/images/projects/project-placeholder.svg'">
+          <div class="certificate-body">
+            <h3>JavaScript Fundamentals</h3>
+            <p class="certificate-org">Coursera</p>
+            <p class="certificate-date">2023</p>
+            <a href="javascript:void(0)" class="btn btn-outline btn-sm" target="_blank" rel="noopener" data-i18n="certificates.viewCertificate">View Certificate</a>
+          </div>
+        </div>
+        <div class="certificate-card reveal">
+          <img src="assets\images\projects\profile.jpg" alt="Certificate" class="certificate-img" onerror="this.src='assets/images/projects/project-placeholder.svg'">
+          <div class="certificate-body">
+            <h3>Responsive Web Design</h3>
+            <p class="certificate-org">freeCodeCamp</p>
+            <p class="certificate-date">2022</p>
+            <a href="javascript:void(0)" class="btn btn-outline btn-sm" target="_blank" rel="noopener" data-i18n="certificates.viewCertificate">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="testimonials.sectionTitle">Testimonials</h2>
+      <p class="section-subtitle reveal">What people say about me</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p class="testimonial-text" data-i18n="testimonials.testimonial1Text">An exceptional developer...</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JD</div>
+            <div class="testimonial-info">
+              <h4 data-i18n="testimonials.testimonial1Name">John Doe</h4>
+              <span data-i18n="testimonials.testimonial1Position">Senior Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-text" data-i18n="testimonials.testimonial2Text">Creative, dedicated...</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JS</div>
+            <div class="testimonial-info">
+              <h4 data-i18n="testimonials.testimonial2Name">Jane Smith</h4>
+              <span data-i18n="testimonials.testimonial2Position">Project Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-text" data-i18n="testimonials.testimonial3Text">Produces clean code...</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-info">
+              <h4 data-i18n="testimonials.testimonial3Name">Ahmed Khan</h4>
+              <span data-i18n="testimonials.testimonial3Position">Tech Lead</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section" id="contact-cta" style="background:var(--bg-secondary);">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title reveal" data-i18n="contact.sectionTitle">Contact Me</h2>
+      <p class="section-subtitle reveal">Let's work together on your next project</p>
+      <a href="contact.html" class="btn btn-primary reveal" data-i18n="contact.formTitle">Send Me a Message</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">[MY INITIALS]</a>
+          <p data-i18n="footer.description">Passionate Computer Science student...</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="GitHub" id="footer-github">GH</a>
+            <a href="#" class="social-link" aria-label="LinkedIn" id="footer-linkedin">LI</a>
+            <a href="#" class="social-link" aria-label="Facebook" id="footer-facebook">FB</a>
+            <a href="#" class="social-link" aria-label="Instagram" id="footer-instagram">IG</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="resume.html" data-i18n="nav.resume">Resume</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="contact.infoTitle">Contact</h4>
+          <a href="mailto:[Nematullah]">✉️ Nematullah</a>
+          <a href="tel:[PHONE]">📞 +93 773032604</a>
+          <a href="javascript:void(0)" id="footer-location-link">📍Kabul, Afghanistan</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">
+        © 2026 Nematullah Sarwari. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const container = document.getElementById('featured-projects');
+      if (container && typeof PROJECTS !== 'undefined') {
+        const featured = PROJECTS.slice(0, 3);
+        container.innerHTML = featured.map(p => `
+          <div class="project-card reveal" data-category="${p.category}">
+            <img src="${p.image}" alt="${p.name}" class="project-img" onerror="this.src='assets/images/projects/project-placeholder.svg'">
+            <div class="project-body">
+              <span class="project-category">${p.category}</span>
+              <h3 class="project-title">${p.name}</h3>
+              <p class="project-desc">${p.description}</p>
+              <div class="project-tech">${p.technologies.slice(0,3).map(t => `<span class="tech-tag">${t}</span>`).join("")}</div>
+              <div class="project-links">
+                <a href="project-details.html?id=${p.id}" class="project-link primary" data-i18n="projects.viewDetails">View Details</a>
+                <a href="${p.github}" target="_blank" rel="noopener" class="project-link secondary" data-i18n="projects.github">GitHub</a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        initReveal();
+        if (typeof setLang === 'function') setLang(currentLang);
+      }
+    });
+  </script>
+</body>
+</html>
+

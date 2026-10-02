@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by [Nematullah] - Web Developer Portfolio">
+  <meta name="author" content="[FULL NAME]">
+  <meta property="og:title" content="Projects | [FULL NAME]">
+  <meta property="og:description" content="Web Developer Projects">
+  <title>Projects | [FULL NAME]</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <script>
+    window.addEventListener('error', function(e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.target.src = 'assets/images/projects/project-placeholder.svg';
+      }
+    }, true);
+  </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p class="loading-text" data-i18n="loading.text">Loading...</p>
+  </div>
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="Screenshot" id="lightbox-img">
+  </div>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">[MY INITIALS]</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+        <li><a href="projects.html" class="nav-link active" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-selector" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ps" data-i18n="langSwitch.pashto">پښتو</button>
+          <button class="lang-btn" data-lang="da" data-i18n="langSwitch.dari">دری</button>
+          <button class="lang-btn" data-lang="en" data-i18n="langSwitch.english">English</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-close" class="mobile-close">&times;</button>
+    <a href="index.html" class="nav-link mobile-menu-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link mobile-menu-link" data-i18n="nav.about">About</a>
+    <a href="#skills" class="nav-link mobile-menu-link" data-i18n="nav.skills">Skills</a>
+    <a href="#services" class="nav-link mobile-menu-link" data-i18n="nav.services">Services</a>
+    <a href="projects.html" class="nav-link mobile-menu-link active" data-i18n="nav.projects">Projects</a>
+    <a href="resume.html" class="nav-link mobile-menu-link" data-i18n="nav.resume">Resume</a>
+    <a href="contact.html" class="nav-link mobile-menu-link" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <section class="section" style="padding-top:140px;">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="projects.sectionTitle">Projects</h2>
+      <p class="section-subtitle reveal">A collection of my work</p>
+      <div class="projects-filters reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filterAll">All</button>
+        <button class="filter-btn" data-filter="html" data-i18n="projects.filterHtml">HTML</button>
+        <button class="filter-btn" data-filter="css" data-i18n="projects.filterCss">CSS</button>
+        <button class="filter-btn" data-filter="javascript" data-i18n="projects.filterJavaScript">JavaScript</button>
+        <button class="filter-btn" data-filter="web-apps" data-i18n="projects.filterWebApps">Web Apps</button>
+        <button class="filter-btn" data-filter="ui-design" data-i18n="projects.filterUiDesign">UI Design</button>
+        <button class="filter-btn" data-filter="other" data-i18n="projects.filterOther">Other</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">[MY INITIALS]</a>
+          <p data-i18n="footer.description">Passionate Computer Science student...</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="resume.html" data-i18n="nav.resume">Resume</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="contact.infoTitle">Contact</h4>
+          <a href="mailto:[EMAIL]">✉️ [nematullahsarwari95@gmail.com]</a>
+          <a href="tel:[PHONE]">📞 [+93 773032604]</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">© 2026 [Nematullah Sarwari]. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const grid = document.getElementById('projects-grid');
+      if (grid && typeof PROJECTS !== 'undefined') {
+        grid.innerHTML = PROJECTS.map(p => `
+          <div class="project-card reveal" data-category="${p.category}">
+            <img src="${p.image}" alt="${p.name}" class="project-img" onerror="this.src='assets/images/projects/project-placeholder.svg'">
+            <div class="project-body">
+              <span class="project-category">${p.category}</span>
+              <h3 class="project-title">${p.name}</h3>
+              <p class="project-desc">${p.description}</p>
+              <div class="project-tech">${p.technologies.slice(0,3).map(t => `<span class="tech-tag">${t}</span>`).join("")}</div>
+              <div class="project-links">
+                <a href="project-details.html?id=${p.id}" class="project-link primary" data-i18n="projects.viewDetails">View Details</a>
+                <a href="${p.github}" target="_blank" rel="noopener" class="project-link secondary" data-i18n="projects.github">GitHub</a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        initReveal();
+        if (typeof setLang === 'function') setLang(currentLang);
+      }
+    });
+  </script>
+</body>
+</html>

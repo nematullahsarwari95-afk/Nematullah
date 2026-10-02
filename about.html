@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About [Nematullah Sarwari] - Computer Science Student, Programmer, Web Developer">
+  <meta name="author" content="[Nematullah Sarwari]">
+  <meta property="og:title" content="About [Nematullah Sarwari]">
+  <meta property="og:description" content="Computer Science Student | Programmer | Web Developer">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <title>About | [Nematullah Sarwari]</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <script>
+    window.addEventListener('error', function(e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.target.src = 'assets/images/projects/project-placeholder.svg';
+      }
+    }, true);
+  </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p class="loading-text" data-i18n="loading.text">Loading...</p>
+  </div>
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="Screenshot" id="lightbox-img">
+  </div>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">[Nematullah Sarwari]</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav-link active" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+        <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-selector" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ps" data-i18n="langSwitch.pashto">پښتو</button>
+          <button class="lang-btn" data-lang="da" data-i18n="langSwitch.dari">دری</button>
+          <button class="lang-btn" data-lang="en" data-i18n="langSwitch.english">English</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-close" class="mobile-close">&times;</button>
+    <a href="index.html" class="nav-link mobile-menu-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link mobile-menu-link active" data-i18n="nav.about">About</a>
+    <a href="#skills" class="nav-link mobile-menu-link" data-i18n="nav.skills">Skills</a>
+    <a href="#services" class="nav-link mobile-menu-link" data-i18n="nav.services">Services</a>
+    <a href="projects.html" class="nav-link mobile-menu-link" data-i18n="nav.projects">Projects</a>
+    <a href="resume.html" class="nav-link mobile-menu-link" data-i18n="nav.resume">Resume</a>
+    <a href="contact.html" class="nav-link mobile-menu-link" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting" data-i18n="about.sectionTitle">About Me</p>
+        <h1 class="hero-name" data-i18n="about.fullName">[Nematullah Sarwari]</h1>
+        <h2 class="hero-title" data-i18n="about.profession">Computer Science Student</h2>
+      </div>
+      <div class="hero-image">
+        <div class="profile-img-wrapper">
+          <img src="assets/images/profile.jpg" alt="[FULL NAME]" class="profile-img" onerror="this.src='assets/images/profile-placeholder.svg'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <h3 data-i18n="about.bioTitle">My Biography</h3>
+          <p data-i18n="about.bioText">I am a dedicated Computer Science student...</p>
+          <h3 data-i18n="about.journeyTitle">My Journey</h3>
+          <p data-i18n="about.journeyText">My programming journey started during my university studies...</p>
+          <h3 data-i18n="about.goalsTitle">Career Goals</h3>
+          <p data-i18n="about.goalsText">I aspire to become a professional Full-Stack Web Developer...</p>
+          <h3 style="margin-top:2rem;" data-i18n="about.interests">Interests</h3>
+          <div class="project-tech" style="margin-top:1rem;">
+            <span class="tech-tag" data-i18n="about.interest1">Web Development</span>
+            <span class="tech-tag" data-i18n="about.interest2">Open Source</span>
+            <span class="tech-tag" data-i18n="about.interest3">UI/UX Design</span>
+            <span class="tech-tag" data-i18n="about.interest4">Learning New Technologies</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="skill-category" style="margin-bottom:2rem;">
+            <h3 data-i18n="about.sectionTitle">About Me</h3>
+            <div class="about-info" style="margin-top:1.5rem;">
+              <div class="about-info-item"><span class="icon">🎓</span><span data-i18n="about.university">[Kandahar UNIVERSITY ]</span></div>
+              <div class="about-info-item"><span class="icon">📚</span><span data-i18n="about.faculty">[Computer Scince]</span></div>
+              <div class="about-info-item"><span class="icon">📍</span><span data-i18n="about.location">[Kabul], [Afghanistan]</span></div>
+              <div class="about-info-item"><span class="icon">✉️</span><span data-i18n="about.email">[nematullahsarwari95@gmail.com]</span></div>
+              <div class="about-info-item"><span class="icon">📞</span><span data-i18n="about.phone">[+93 773032604]</span></div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="education.sectionTitle">Education</h3>
+            <div class="timeline" style="margin-top:1.5rem;">
+              <div class="timeline-item">
+                <div class="timeline-date">2021 - Present</div>
+                <h4 class="timeline-title" data-i18n="education.degree">Computer Science</h4>
+                <p class="timeline-subtitle" data-i18n="education.institution">[Kandahar UNIVERSITY ]</p>
+                <p class="timeline-desc" data-i18n="education.description">Studying core computer science subjects...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">[Nematullah Sarwari]</a>
+          <p data-i18n="footer.description">Passionate Computer Science student...</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="resume.html" data-i18n="nav.resume">Resume</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="contact.infoTitle">Contact</h4>
+          <a href="mailto:[EMAIL]">✉️ [nematullahsarwari95@gmail.com]</a>
+          <a href="tel:[PHONE]">📞 [+93 773032604]</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">© 2026 [Nematullah Sarwari]. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

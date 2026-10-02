@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | [Nematullah]</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <script>
+    window.addEventListener('error', function(e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.target.src = 'assets/images/projects/project-placeholder.svg';
+      }
+    }, true);
+  </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p class="loading-text" data-i18n="loading.text">Loading...</p>
+  </div>
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="Screenshot" id="lightbox-img">
+  </div>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">[MY INITIALS]</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-selector" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ps" data-i18n="langSwitch.pashto">پښتو</button>
+          <button class="lang-btn" data-lang="da" data-i18n="langSwitch.dari">دری</button>
+          <button class="lang-btn" data-lang="en" data-i18n="langSwitch.english">English</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-close" class="mobile-close">&times;</button>
+    <a href="index.html" class="nav-link mobile-menu-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link mobile-menu-link" data-i18n="nav.about">About</a>
+    <a href="projects.html" class="nav-link mobile-menu-link" data-i18n="nav.projects">Projects</a>
+    <a href="resume.html" class="nav-link mobile-menu-link" data-i18n="nav.resume">Resume</a>
+    <a href="contact.html" class="nav-link mobile-menu-link" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <div class="not-found">
+    <div>
+      <h1 class="reveal" data-i18n="notFound.title">404</h1>
+      <h2 class="reveal" data-i18n="notFound.subtitle">Page Not Found</h2>
+      <p class="reveal" data-i18n="notFound.message">Sorry, the page you are looking for does not exist.</p>
+      <a href="index.html" class="btn btn-primary reveal" data-i18n="notFound.backHome">Back to Home</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">[MY INITIALS]</a>
+          <p data-i18n="footer.description">Passionate Computer Science student...</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="resume.html" data-i18n="nav.resume">Resume</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="contact.infoTitle">Contact</h4>
+          <a href="mailto:[EMAIL]">✉️ [nematullahsarwari95@gmail.com]</a>
+          <a href="tel:[PHONE]">📞 [+93 773032604]</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">© 2026 nematullah. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

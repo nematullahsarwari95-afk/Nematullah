@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact [FULL NAME] - Computer Science Student, Programmer, Web Developer">
+  <meta name="author" content="[FULL NAME]">
+  <meta property="og:title" content="Contact [Nematullah]">
+  <meta property="og:description" content="Get in touch for web development projects">
+  <title>Contact | [Nematullah]</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <script>
+    window.addEventListener('error', function(e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.target.src = 'assets/images/projects/project-placeholder.svg';
+      }
+    }, true);
+  </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <p class="loading-text" data-i18n="loading.text">Loading...</p>
+  </div>
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">[MY INITIALS]</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+        <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-selector" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ps" data-i18n="langSwitch.pashto">پښتو</button>
+          <button class="lang-btn" data-lang="da" data-i18n="langSwitch.dari">دری</button>
+          <button class="lang-btn" data-lang="en" data-i18n="langSwitch.english">English</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-close" class="mobile-close">&times;</button>
+    <a href="index.html" class="nav-link mobile-menu-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link mobile-menu-link" data-i18n="nav.about">About</a>
+    <a href="#skills" class="nav-link mobile-menu-link" data-i18n="nav.skills">Skills</a>
+    <a href="#services" class="nav-link mobile-menu-link" data-i18n="nav.services">Services</a>
+    <a href="projects.html" class="nav-link mobile-menu-link" data-i18n="nav.projects">Projects</a>
+    <a href="resume.html" class="nav-link mobile-menu-link" data-i18n="nav.resume">Resume</a>
+    <a href="contact.html" class="nav-link mobile-menu-link active" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <section class="section" style="padding-top:140px;">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="contact.sectionTitle">Contact Me</h2>
+      <p class="section-subtitle reveal">Let's work together on your next project</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card reveal">
+            <div class="contact-icon" data-type="email">✉️</div>
+            <div class="contact-card-text">
+              <h4 data-i18n="contact.email">Email</h4>
+              <a href="mailto:[EMAIL]">[EMAIL]</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon" data-type="phone">📞</div>
+            <div class="contact-card-text">
+              <h4 data-i18n="contact.phone">Phone</h4>
+              <a href="tel:[PHONE]">[PHONE]</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon" data-type="whatsapp">💬</div>
+            <div class="contact-card-text">
+              <h4 data-i18n="contact.whatsapp">WhatsApp</h4>
+              <a href="https://wa.me/[PHONE]" target="_blank" rel="noopener">[PHONE]</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon" data-type="telegram">✈️</div>
+            <div class="contact-card-text">
+              <h4 data-i18n="contact.telegram">Telegram</h4>
+              <a href="https://t.me/[USERNAME]" target="_blank" rel="noopener">@[USERNAME]</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon" data-type="location">📍</div>
+            <div class="contact-card-text">
+              <h4 data-i18n="contact.location">Location</h4>
+              <span>[Kabul], [Afghanistan]</span>
+              <br>
+              <a href="[GOOGLE MAPS LINK]" target="_blank" rel="noopener" style="color:var(--primary); font-size:0.85rem;" data-i18n="contact.viewLocation">View Location</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <h3 style="margin-bottom:1.5rem;" data-i18n="contact.formTitle">Send Me a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="contact.fullName">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.emailField">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="contact.phoneField">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="contact.subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="contact.sendButton">Send Message</button>
+            <div id="form-message" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">[Nematullah Sarwari]</a>
+          <p data-i18n="footer.description">Passionate Computer Science student...</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="resume.html" data-i18n="nav.resume">Resume</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="contact.infoTitle">Contact</h4>
+          <a href="mailto:[EMAIL]">✉️ [nematullahsarwari]</a>
+          <a href="tel:[PHONE]">📞 [+93 773032604]</a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">© 2026 [FULL NAME]. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
